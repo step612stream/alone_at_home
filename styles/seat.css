@@ -1,0 +1,97 @@
+*{
+    box-sizing:border-box;
+}
+@font-face{
+    font-family: TrueType;
+    src:url(../fonts/Grandstander-Italic-VariableFont_wght.ttf);
+}
+body{
+    padding:0px;
+    margin:0px;
+    font-family: TrueType;
+    font-size: 20px;
+}
+/*header*/
+header{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    font-size: 20px;
+    background-color: burlywood;
+    padding:30px;
+    box-shadow:0 0 3px;
+    font-weight: bold;
+}
+header ul{
+    display:flex;
+    flex-basis: 60%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header li{
+    list-style-type: none;
+}
+header a{
+    text-decoration: none;
+    color:black;
+}
+header img{
+    width:120px;
+}
+/*main*/
+.vibor_text{
+    text-align: center;
+}
+.map_and_zone{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.zone{
+    flex-basis:40%;
+    padding:30px;
+    padding-top:60px;
+}
+.map img{
+    width:100%;
+}
+.map{
+    flex-basis:60%; 
+}
+.bt{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+@media all and (max-width:1100px){
+    .map_and_zone{
+        display: flex;
+        flex-direction: column;
+    }
+    .map{
+        flex-basis:100%;
+    }
+    .zone{
+        flex-basis:100%;
+    }
+}
+@media all and (max-width:900px){
+    .zone{
+        padding-top:0px;
+    }
+}
+/*footer*/
+footer{
+    padding:30px;
+    background-color: burlywood;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0 0 3px;
+}
+footer a {
+    display:flex;
+    align-items: center;
+}

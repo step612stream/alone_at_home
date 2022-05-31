@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='styles/booking.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование</title>
+</head>
+
+<body>
+    <header>
+        <img src='images/logo.svg' alt='logo'>
+        <ul>
+            <li><a href='index.html'>Акции</a></li>
+            <li>
+                <form>
+                    <input type='search'><input type='submit'>
+                </form>
+            </li>
+            <li><a href='index.html'>Управление бронированием</a></li>
+        </ul>
+    </header>
+    <div class='bronb'>
+        <div class='bronb_text'>
+            <h2>Бронирование</h2>
+        </div>
+        <div class='br'>
+            <h3>Данные о заказе</h3>
+            <h4>Регион:Омская область</h4>
+            <h4>Адрес кемпинга:</h4>
+            <p>кемпинг «Лесная поляна», Ачинский район, с. Ключи, Пионерская долина, 5</p>
+            <h4>Дата заселения:</h4>
+            <form>
+                <input type='radio' id='16' name='zasel'><label for='16'>16.12.2021</label><br>
+                <input type='radio' id='18' name='zasel'><label for='16'>18.12.2021</label><br>
+                <h4>Дата выселения:</h4>
+                <input type='radio' id='20' name='visel'><label for='20'>20.12.2021</label><br>
+                <input type='radio' id='31' name='visel'><label for='31'>31.12.2021</label><br>
+                <p>Стоимость:2000р/сутки</p>
+                <hr>
+                <h3>Данные о постояльцах:</h3>
+                <label for='name1'>Фамилия:</label>
+                <input type='text' id='name1'><br>
+                <label for='name2'>Имя:</label>
+                <input type='text' id='name2'><br>
+                <label for='name3'>Отчество:</label>
+                <input type='text' id='name3'><br>
+                <label for='date'>Дата рождения:</label>
+                <input type='date' max='2021-12-16'><br>
+                <label for='number'>Номер документа:</label>
+                <input type='text' id='number'><br>
+                <hr>
+                <h3>Выбор дополнительных услуг:</h3>
+                <input type='checkbox' id='med'><label for='med'>Медицинское сопровождение - 500 р/чел</label><br>
+                <input type='checkbox' id='kur'><label for='kur'>Курьерские услуги - 50 р + 10 р за каждый км
+                </label><br>
+                <input type='checkbox' id='food'><label for='food'>Питание - 500 р/чел </label><br><br>
+                <div class='btt'>
+                    <input type='submit' value='Добавить человека' class='bt'>
+                    <input type='submit' value="Удалить человека" class='bt'>
+                </div>
+                <h4>Итоговая стоимость:5000р.</h4>
+                <input type='submit' value='Бронировать' class='bt'>
+
+            </form>
+
+        </div>
+    </div>
+    <footer>
+        <p>Телефон: “8 (800) 100-10-10”</p>
+        <a href='http://fuvgucmh-m1.wsr.ru'>Home </a>
+        <a href='http://fuvgucmh-m1.wsr.ru/login'>Login </a>
+        <a href='http://fuvgucmh-m1.wsr.ru/signup'>Sign up</a>
+        <a href='http://fuvgucmh-m1.wsr.ru/contact'>Contact </a>
+        <a href='http://fuvgucmh-m1.wsr.ru/news'>News </a>
+        <a href='http://fuvgucmh-m1.wsr.ru/return'>Return </a>
+        <a href='http://fuvgucmh-m1.wsr.ru/feedback'>Feedback </a>
+    </footer>
+</body>
+
+</html>

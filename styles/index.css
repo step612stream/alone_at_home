@@ -1,0 +1,162 @@
+*{
+    box-sizing:border-box;
+}
+@font-face{
+    font-family: TrueType;
+    src:url(../fonts/Grandstander-Italic-VariableFont_wght.ttf);
+}
+body{
+    padding:0px;
+    margin:0px;
+    font-family: TrueType;
+    font-size: 20px;
+}
+/*header*/
+header{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    font-size: 20px;
+    background-color: burlywood;
+    padding:30px;
+    box-shadow:0 0 3px;
+    font-weight: bold;
+}
+header ul{
+    display:flex;
+    flex-basis: 60%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header li{
+    list-style-type: none;
+}
+header a{
+    text-decoration: none;
+    color:black;
+}
+header img{
+    width:120px;
+}
+
+/*main*/
+/*анимация*/
+.anim{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.block{
+    padding:15px;
+    margin:10px;
+    border:1px solid black;
+    border-radius:30px;
+    background-color: rgb(248, 227, 198);
+    width:300px;
+    text-align: center;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.anim_text{
+    text-align: center;
+}
+@keyframes anim{
+    0%{opacity:0}
+    25%{opacity:0.5}
+    50%{opacity:1}
+    75%{opacity:0.5}
+    100%{opacity:0}
+}
+/*о компании(Цель, Девиз и Отзывы)*/
+.o_companii_text{
+    text-align: center;
+}
+.otz_text{
+    text-align: center;
+}
+.otzivi{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.block2{
+    padding:15px;
+    margin:10px;
+    border:1px solid black;
+    border-radius:30px;
+    background-color: rgb(248, 227, 198);
+    width:300px;
+    text-align: center;
+    transition-property: padding;
+    transition-duration: 0.2s;
+    
+}
+.block2:hover{
+    padding: 25px;
+}
+/*Поиск*/
+.poisk_text{
+    text-align: center;
+}
+.bt{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.forma{
+    padding:30px;
+    margin:0 70px;
+    border:1px solid black;
+
+}
+.forma label{
+    font-weight: bold;
+}
+/*Акции*/
+.akcii_text{
+    text-align: center;
+}
+.block3 img{
+    width:100%;
+}
+.block3{
+    width:600px;
+    padding:15px;
+    margin:10px;
+    border:1px solid black;
+    border-radius:30px;
+    background-color: rgb(248, 227, 198);
+}
+.akc{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*подписка на закрытые акции*/
+.sub_text{
+    text-align: center;
+}
+.sub form{
+    display:flex;
+    justify-content: center;
+}
+.sub{
+    padding-bottom: 30px;
+}
+/*footer*/
+footer{
+    padding:30px;
+    background-color: burlywood;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0 0 3px;
+}
+footer a {
+    display:flex;
+    align-items: center;
+}
